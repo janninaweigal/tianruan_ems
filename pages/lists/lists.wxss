@@ -1,0 +1,69 @@
+#lists .nav-container {
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 2rpx 2rpx 1rpx #eeeeee;
+}
+
+#lists .nav-container .nav-list {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+#lists .nav-container .active {
+  color: coral;
+}
+
+#lists .list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#lists .list-container .item {
+  height: 140rpx;
+  padding: 8rpx 20rpx;
+  flex: 1;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 1rpx 0rpx 1rpx #eeeeee;
+}
+
+#lists .list-container .item .title-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+#lists .list-container .item .title-wrapper .title{
+  flex: 2;
+  text-align: left;
+  font-size: 33rpx;
+  font-family: '楷体';
+  color: #080808;
+}
+
+#lists .list-container .item .title-wrapper .time{
+  flex: 2;
+  text-align: right;
+  font-size: 23rpx;
+  font-family: '黑体';
+  color: #080808;
+}
+
+#lists .list-container .item .content-wrapper {
+  margin-top: 25rpx;
+  display: flex;
+  align-items: flex-end;
+  color: #CDCDC1;
+}
+
+#lists .list-container .item .content-wrapper .content {
+  flex: 4;
+  font-size: 23rpx;
+}
+
+#lists .list-container .item .content-wrapper .status {
+  flex: 1;
+  font-size: 25rpx;
+  color: #CD0000;
+}

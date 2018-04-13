@@ -1,0 +1,21 @@
+<view class="editContainer">
+  <view>
+    <text>收货人: </text>
+    <input type='text'  class="text" value="{{good.name}}"></input>
+  </view>
+
+  <view>
+    <text>联系电话: </text>
+    <input type='number'  class="text" value="{{good.phone}}"></input>
+  </view>
+
+  <view>
+    <text>所在地区: </text>
+    <text class="text">{{good.province}}  ></text>
+  </view>
+   <view>
+    <text>详细地址: </text>
+    <input type='text'  class="text" maxlength="-1" value="{{good.address}}"></input>
+  </view>
+  <button type='primary' class="btn" bindtap='saveAddress'>保存</button>
+</view>

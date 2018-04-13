@@ -1,0 +1,20 @@
+<view id="lists">
+  <view class="nav-container">
+    <view data-active-value="0" bindtap="changeActive" class="{{active==='0' ? 'nav-list active' : 'nav-list'}}">进行中</view>
+    <view data-active-value="1" bindtap="changeActive" class="{{active==='1' ? 'nav-list active' : 'nav-list'}}">已完成</view>
+  </view>
+  <view class="list-container">
+    <view class="item" wx:for="{{lists}}" wx:key="item.pid" data-list-pid="{{item.pid}}" bindtap="seeAll">
+      <view class="title-wrapper" >
+        <view class="title">{{item.title}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+      <view class="content-wrapper">
+        <view class="content">
+          {{item.content}}
+        </view>
+        <view class="status">{{item.status}}</view>
+      </view>
+    </view>
+  </view>
+</view>

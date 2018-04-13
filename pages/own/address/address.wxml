@@ -1,0 +1,25 @@
+<view class="addressContainer">
+  <view class="addressList" wx:for="{{goodAddress}}" wx:key="{{goodAddress.gid}}">
+    <view class="top">
+      <text>{{item.name}}</text>
+      <text>{{item.phone}}</text>
+    </view>
+    <text class="middle">{{item.address}}</text>
+    <view class="bottom">
+       <view>
+         <checkbox value="{{item.defaultAddress?1:0}}" checked="{{item.defaultAddress}}"/>默认地址
+       </view>
+       <view class='right'>
+         <view bindtap='editAddress' data-editGood="{{item}}">
+           <image src="../../../img/edit.png"></image>
+           <text>编辑</text>
+         </view>
+         <view bindtap='deleteAddress'>
+           <image src="../../../img/delete.png"></image>
+           <text>删除</text>
+         </view>
+       </view>
+    </view>
+  </view>
+  <button type='primary' class="btn" bindtap='addNew'>新增收货地址</button>
+</view>

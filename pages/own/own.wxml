@@ -1,0 +1,18 @@
+ <view class="personContainer">
+  <view>
+    <text>头像</text>
+    <image src="{{userInfo.avatarUrl}}" class="userinfo-avatar" background-size="cover"></image>
+  </view>
+  <view>
+    <text>昵称</text>
+    <text class="text">{{hasUserInfo ? userInfo.nickName : '你好~'}}</text>
+  </view>
+  <view>
+    <text>性别</text>
+    <text class="text">{{userInfo.gender?'男':'女'}}</text>
+  </view>
+  <view bindtap='myaddress'>
+    <text>我的收货地址</text>
+    <text class="text">{{brackets}}</text>
+  </view>
+</view> 

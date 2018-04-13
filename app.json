@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/own/address/address",
+    "pages/own/address/edit/edit",
+    "pages/own/own",
+    "pages/own/address/new/new",
+    "pages/ems/ems",
+    "pages/lists/lists"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天软服务平台",
+    "navigationBarTextStyle":"black"
+  }
+}

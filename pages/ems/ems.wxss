@@ -1,0 +1,142 @@
+#ems .swiper-container {
+  width: 100%;
+  height: 180px;
+}
+
+#ems .swiper-container .slide-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15rpx;
+}
+
+#ems .ems-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#ems .ems-container .form-wrapper {
+  padding: 40rpx;
+  font-size: 30rpx;
+}
+
+#ems .ems-container .form-wrapper .company {
+  display: flex;
+  align-items: center;
+}
+
+#ems .ems-container .form-wrapper .company .company_title {
+  flex: 1;
+  padding: 8rpx;
+  text-align: center;
+  border: 1px dashed #eee;
+}
+
+#ems .ems-container .form-wrapper .company .company_select {
+  flex: 3;
+  text-align: center;
+}
+
+#ems .ems-container .form-wrapper .house {
+  display: flex;
+  margin-top: 8rpx;
+  align-items: center;
+}
+
+#ems .ems-container .form-wrapper .house .house_title {
+  flex: 1;
+  padding: 8rpx;
+  text-align: center;
+  border: 1px dashed #eee;
+}
+
+#ems .ems-container .form-wrapper .house .house_select {
+  flex: 3;
+  text-align: center;
+}
+
+#ems .ems-container .form-wrapper .time {
+  display: flex;
+  margin-top: 8rpx;
+  align-items: center;
+}
+
+#ems .ems-container .form-wrapper .time .time_title {
+  flex: 1;
+  padding: 8rpx;
+  text-align: center;
+  border: 1px dashed #eee;
+}
+
+#ems .ems-container .form-wrapper .time .time_select {
+  flex: 3;
+  text-align: center;
+}
+
+#ems .ems-container .form-wrapper .address {
+  display: flex;
+  margin-top: 8rpx;
+  align-items: center;
+}
+
+#ems .ems-container .form-wrapper .address .address_title {
+  flex: 1;
+  padding: 8rpx;
+  text-align: center;
+  border: 1px dashed #eee;
+}
+
+#ems .ems-container .form-wrapper .address .address_select {
+  flex: 3;
+  text-align: center;
+}
+
+#ems .ems-container .form-wrapper .remark {
+  display: flex;
+  margin-top: 28rpx;
+  align-items: center;
+}
+
+#ems .ems-container .form-wrapper .remark .remark_title {
+  flex: 1;
+  padding: 8rpx;
+  text-align: center;
+}
+
+#ems .ems-container .form-wrapper .remark .remark_select {
+  flex: 3;
+  height: 120rpx;
+  padding: 10rpx;
+  font-size: 23rpx;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+#ems .ems-container .form-wrapper .add-addrss {
+  text-align: center;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border: 1rpx solid #eee;
+}
+
+#ems .ems-container .form-wrapper .add-addrss .title {
+  font-family: '楷体';
+  color: red;
+}
+
+#ems .ems-container .form-wrapper .add-addrss .content {
+  color: blue;
+  font-size: 26rpx;
+  padding: 28rpx;
+}
+
+#ems .ems-container .form-wrapper .btn-area {
+  position: absolute;
+  bottom: 40rpx;
+  width: 90%;
+}
+
+#ems .ems-container .form-wrapper .btn-area .ok {
+  background-color: blue;
+  color: white;
+  opacity: 0.5;
+}

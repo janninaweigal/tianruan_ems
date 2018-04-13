@@ -1,0 +1,47 @@
+<view id="ems">
+  <swiper indicator-dots="true" autoplay="true" interval="5000" class="swiper-container">
+    <block>
+      <swiper-item style="height:500px;" wx:for="{{sliderDatas}}" wx:key="index">
+        <image src="{{item.src}}" class="slide-img" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="ems-container">
+    <form bindsubmit="formSubmit" bindreset="formReset" class="form-wrapper">
+      <view class="company">
+        <view class="company_title">快递公司</view>
+        <picker class="company_select" bindchange="bindPickerChange" range="{{houses}}" range-key="pid" value="{{value}}">
+          <view style='color: blue;'>+点击选择快递公司</view>
+        </picker>
+      </view>
+      <view class="house">
+        <view class="house_title">物品信息</view>
+        <input class="house_select" placeholder="例如: 衣服 (中等)" value='{{value}}' />
+      </view>
+      <view class="time">
+        <view class="time_title">取件时间:</view>
+        <picker class="time_select" mode="time" value="{{date}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view style='color: blue;'>+点击选择取件时间</view>
+        </picker>
+      </view>
+      <view class="address">
+        <view class="address_title">选择地址:</view>
+        <picker class="address_select" bindchange="bindPickerChange" range="{{houses}}" range-key="pid" value="{{value}}">
+          <view style='color: blue;'>+点击选择收货地址</view>
+        </picker>
+      </view>
+      <view class="remark">
+        <textarea  class="remark_select"  placeholder="请添加一些备注内容~~~例如: 请按约定取件时间送达" value='{{value}}' />
+      </view>
+      <view class="add-addrss">
+        <view class="title">温馨小提示：</view>
+        <view class="content">
+          <navigator url="/lists/lists/" hover-class="none">点击这里添加收获地址呦</navigator>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button formType="submit" class="ok">确定</button>
+      </view>
+    </form>
+  </view>
+</view>

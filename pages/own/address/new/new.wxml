@@ -1,0 +1,22 @@
+<view class="newContainer">
+  <view>
+    <text>收货人</text>
+    <input type='text'></input>
+  </view>
+
+  <view>
+    <text>联系电话</text>
+    <input type='number'></input>
+  </view>
+
+  <view>
+    <text>所在地区</text>
+    <text class="text">请选择  ></text>
+  </view>
+  <textarea  class="detail text"  placeholder="详细地址"  />
+  <view>
+   <text>设为默认地址</text>
+   <checkbox value="{{item.defaultAddress?1:0}}" checked="{{item.defaultAddress}}"/>
+  </view>
+  <button type='primary' class="btn" bindtap='saveAddress'>保存</button>
+</view>
